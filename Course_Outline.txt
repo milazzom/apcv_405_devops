@@ -1,0 +1,31 @@
+Week 1: Introduction to DevOps I—Operating Systems and Virtualization
+•	Gain an overview of DevOps, operating systems, scripting, task automation, cloud computing, and virtualization.
+•	Define the outcomes (the “Why” behind implementing DevOps)
+Week 2: Introduction to DevOps II— Scripting, Task Automation, and Cloud Computing
+•	Learn more about the fundamentals of DevOps principles and practices.
+•	Overview of provisioning environments
+•	Continuous integration as a prerequisite to DevOps
+•	Case Study 1 due
+Week 3: Development Workflow
+•	Learn to deploy and/or build software, link software to external libraries, identify when and how to upgrade libraries, and how to use a compiler to translate programming language into machine language.
+•	Viewing the pipeline as code
+•	Building the pipeline
+•	Lab Exercise 1 due
+Week 4: Releasing, File Versioning and Testing
+•	Learn to implement the change management processes, schedule building releases, utilize a source code manager like GitHub, and automate new software releases.
+•	Explore functional testing, load/performance testing, and regression testing.
+Week 5: Deploying/Packaging
+•	Learn to copy and upload the software compiled to a given machine, identify strengths and weaknesses of different packaging methods, and select the optimal packaging method for a particular context.
+•	Provisioning environments 
+•	Infrastructure as Code
+•	Automated Deployment
+•	Case Study 2 due
+Week 6: Configuring
+•	Learn to identify effective database management practices, select between different formats for storing software configurations, utilize mesh services to connect and communicate between differentiated independent components of the software system, and develop methods to track changes in software configurations.
+•	Telemetry in the DevOps process
+•	Lab Exercise 2 due
+Week 7: Monitoring
+•	Learn to use software to collect user data and graph metrics in real time, monitor software performance by interpreting metrics in relation to others, establish a threshold for each metric to identify and report issues, and select metrics to log and make decisions about how to store, compress, and archive logs.
+•	Review deployment architectures and continuous deployment.
+•	Integrating customer feedback
+•	Final project due

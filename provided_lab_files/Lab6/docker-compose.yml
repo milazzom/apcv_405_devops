@@ -1,0 +1,8 @@
+version: '3'
+services:
+  app:
+    build: .
+    environment:
+      - USER_NAME=ComposeUser
+    volumes:
+      - .:/app

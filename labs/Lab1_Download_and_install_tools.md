@@ -153,4 +153,4 @@ These steps help you confirm Docker is installed and working correctly.
 
 ### 4. Submit a Screenshot
 
-Take a screenshot showing the output of both `git --version` and `docker --version` commands in your terminal. Submit this screenshot as proof of successful installation.
+Take a screenshot showing the output of both `git --version` and `docker --version` commands in your terminal. Submit this screenshot as proof of successful installation.  Take a screenshot of the output of the Nginx container within your web browser.

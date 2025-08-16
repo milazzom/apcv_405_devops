@@ -50,10 +50,12 @@ Choose one or more cloud providers and sign up for a free account:
 - [Google Cloud Free Tier](https://cloud.google.com/free)
 - [Microsoft Azure Free Account](https://azure.microsoft.com/free)
 
+NOTE: A credit card may be required to open a Microsoft Azure Free Account.  If you do not feel comfortable providing a card, I recommend exploring the Google Cloud Free Tier.
+
 **Explore the console:**  
 - Log in and browse the dashboard.
 - Locate the section to launch a virtual machine (EC2 for AWS, Compute Engine for GCP, Virtual Machines for Azure).
-- Do not launch a VM yet—just familiarize yourself with the interface.
+- Do not launch a VM—just familiarize yourself with the interface.  Virtual machines can be expensive!
 
 ---
 
@@ -64,4 +66,4 @@ Choose one or more cloud providers and sign up for a free account:
   - Your script running locally.
   - Your GitHub Actions workflow run.
   - The cloud provider dashboard after login.
-- Submit as instructed by your instructor.
+- Put these screenshots in a Word document with the filename NETID-Lab2.docx and submit it to D2L

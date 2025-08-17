@@ -24,7 +24,6 @@
 - Basic OS concepts: processes, memory management, file systems
 
 **Resource:**  
-- [Operating System Concepts (GeeksforGeeks)](https://www.geeksforgeeks.org/operating-system-introduction/)
 - [Linux Journey](https://linuxjourney.com/)
 
 ---
@@ -35,7 +34,6 @@
 - Benefits of automation in DevOps
 
 **Resource:**  
-- [Introduction to Bash Scripting (DigitalOcean)](https://www.digitalocean.com/community/tutorial_series/getting-started-with-bash-scripting)
 - [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)
 
 ---

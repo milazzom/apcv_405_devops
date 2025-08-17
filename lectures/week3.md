@@ -14,7 +14,6 @@
 - Deployment strategies
 
 **Resource:**  
-- [Software Deployment Explained (Red Hat)](https://www.redhat.com/en/topics/automation/what-is-software-deployment)
 - [Build Tools Overview (Atlassian)](https://www.atlassian.com/continuous-delivery/build-tools)
 
 ---
@@ -25,7 +24,6 @@
 - Identifying and upgrading dependencies
 
 **Resource:**  
-- [Managing Dependencies (npm)](https://docs.npmjs.com/about-dependencies-and-devdependencies)
 - [Dependency Management (Maven)](https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html)
 
 ---
@@ -37,7 +35,6 @@
 
 **Resource:**  
 - [Compiler Basics (GeeksforGeeks)](https://www.geeksforgeeks.org/compiler-design-tutorials/)
-- [How Compilers Work (freeCodeCamp)](https://www.freecodecamp.org/news/how-do-compilers-work/)
 
 ---
 
@@ -47,7 +44,6 @@
 - Example: YAML pipelines (GitHub Actions, Azure Pipelines)
 
 **Resource:**  
-- [Pipeline as Code (Microsoft)](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/pipelines-as-code)
 - [GitHub Actions Workflow Syntax](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions)
 
 ---

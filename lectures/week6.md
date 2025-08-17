@@ -26,7 +26,6 @@
 - Best practices for managing configurations
 
 **Resource:**  
-- [Configuration File Formats (Stack Overflow)](https://stackoverflow.com/questions/337701/what-are-the-pros-and-cons-of-the-various-configuration-file-formats)
 - [Twelve-Factor App: Config](https://12factor.net/config)
 
 ---
@@ -59,7 +58,6 @@
 - Using telemetry for monitoring and improvement
 
 **Resource:**  
-- [Telemetry in DevOps (Microsoft)](https://learn.microsoft.com/en-us/devops/monitor/telemetry)
 - [Application Insights Overview (Azure)](https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview)
 
 ---

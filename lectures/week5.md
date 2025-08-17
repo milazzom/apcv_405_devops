@@ -14,7 +14,6 @@
 - Packaging methods: archives, installers, containers (Docker)
 
 **Resource:**  
-- [Software Packaging Explained (Red Hat)](https://www.redhat.com/en/topics/automation/what-is-software-packaging)
 - [Docker Overview](https://docs.docker.com/get-started/overview/)
 
 ---
@@ -46,7 +45,6 @@
 
 **Resource:**  
 - [Infrastructure as Code (Microsoft)](https://learn.microsoft.com/en-us/devops/deliver/what-is-infrastructure-as-code)
-- [Pulumi IaC Overview](https://www.pulumi.com/what-is/infrastructure-as-code/)
 
 ---
 

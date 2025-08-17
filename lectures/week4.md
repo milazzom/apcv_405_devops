@@ -15,7 +15,6 @@
 
 **Resource:**  
 - [Change Management in DevOps (Atlassian)](https://www.atlassian.com/it-unplugged/change-management/devops-change-management)
-- [Release Management Best Practices (Azure)](https://learn.microsoft.com/en-us/azure/devops/learn/what-is-release-management)
 
 ---
 
@@ -37,7 +36,6 @@
 
 **Resource:**  
 - [Automating Releases with GitHub Actions](https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages)
-- [Jenkins Release Automation](https://www.jenkins.io/doc/book/pipeline/release/)
 
 ---
 
@@ -67,9 +65,7 @@
 
 **Resource:**
 - [DevSecOps Overview (Red Hat)](https://www.redhat.com/en/topics/devops/what-is-devsecops)
-- [DevSecOps Best Practices (OWASP)](https://owasp.org/www-project-devsecops-best-practices/)
 - [GitHub Security Features](https://docs.github.com/en/code-security)
-- [Azure DevOps Security Documentation](https://learn.microsoft.com/en-us/azure/devops/learn/security-devops)
 
 ---
 

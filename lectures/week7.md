@@ -38,7 +38,6 @@
 
 **Resource:**  
 - [ELK Stack Guide (Elastic)](https://www.elastic.co/what-is/elk-stack)
-- [Splunk Documentation](https://docs.splunk.com/Documentation/Splunk/latest)
 
 ---
 
@@ -48,7 +47,6 @@
 - Best practices for continuous deployment
 
 **Resource:**  
-- [Deployment Strategies (Microsoft)](https://learn.microsoft.com/en-us/azure/architecture/guide/deployment/deployment-strategies)
 - [Continuous Deployment (Atlassian)](https://www.atlassian.com/continuous-delivery/continuous-deployment)
 
 ---

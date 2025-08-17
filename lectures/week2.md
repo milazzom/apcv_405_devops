@@ -24,7 +24,6 @@
 - Introduction to configuration management tools (Ansible, Chef, Puppet)
 
 **Resource:**  
-- [Automating Tasks with PowerShell (Microsoft)](https://learn.microsoft.com/en-us/powershell/scripting/learn/deep-dives/everything-about-powershell)
 - [Ansible Getting Started](https://docs.ansible.com/ansible/latest/getting_started/index.html)
 
 ---

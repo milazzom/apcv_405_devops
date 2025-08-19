@@ -11,11 +11,7 @@ Set up monitoring for a containerized application, collect and visualize metrics
 - **Docker (recommended for all OS):**
   - [Prometheus Docker Hub](https://hub.docker.com/r/prom/prometheus)
   - [Grafana Docker Hub](https://hub.docker.com/r/grafana/grafana)
-- Pull images:
-  ```sh
-  docker pull prom/prometheus
-  docker pull grafana/grafana
-  ```
+- All required images will be pulled or built automatically when you run Docker Compose.
 
 ---
 
@@ -23,14 +19,10 @@ Set up monitoring for a containerized application, collect and visualize metrics
 **Purpose:** Generate metrics from a running application for monitoring.
 
 - Use the provided [`metrics_app.py`](../provided_lab_files/Lab7/metrics_app.py:1) file.
-- Install the Prometheus Python client:
-  ```sh
-  pip install prometheus_client
-  ```
-- Run the app:
-  ```sh
-  python metrics_app.py
-  ```
+- The app will be built into a container using the provided Dockerfile.
+- No need to install dependencies manually; they are installed during the image build.
+- The app will run automatically as a container when you start Docker Compose.
+- Access the metrics endpoint at [http://localhost:8000](http://localhost:8000).
 
 ---
 
@@ -38,7 +30,7 @@ Set up monitoring for a containerized application, collect and visualize metrics
 **Purpose:** Orchestrate monitoring tools and configure Prometheus to scrape your app's metrics.
 
 - Use the provided [`docker-compose.yml`](../provided_lab_files/Lab7/docker-compose.yml:1) and [`prometheus.yml`](../provided_lab_files/Lab7/prometheus.yml:1) files.
-- Start all services:
+- Start all services (metrics app, Prometheus, Grafana) together:
   ```sh
   docker-compose up
   ```
@@ -61,13 +53,24 @@ Set up monitoring for a containerized application, collect and visualize metrics
   ```sh
   docker-compose logs
   ```
+---
+### 6. Stop and Clean Up Docker Compose Deployment
+**Purpose:** Properly shut down all services and remove resources.
+
+- To stop all running containers and clean up resources:
+  ```sh
+  docker-compose down
+  ```
+- This command stops all services and removes containers, networks, and default volumes created by Docker Compose.
 
 ---
 
-### 6. Submit Evidence
+---
+
+### 7. Submit Evidence
 **Purpose:** Demonstrate completion and understanding of each step.
 
 - Take screenshots of:
-  - Prometheus and Grafana dashboards.
+  - Prometheus and Grafana dashboards (after accessing the metrics app of course!)
   - App and container logs.
-- Submit as instructed by your instructor.
+- Submit your screenshots within a Word document named NetId-Lab7.docx and upload it to D2L against the Lab 7 assignment.

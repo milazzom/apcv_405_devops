@@ -47,6 +47,11 @@ Configure applications using environment variables and config files, connect to 
   ```sh
   docker-compose up --build
   ```
+- To stop and clean up resources after testing, run:
+  ```sh
+  docker-compose down
+  ```
+  This command stops all services and removes containers, networks, and other resources created by Docker Compose.
 
 ---
 

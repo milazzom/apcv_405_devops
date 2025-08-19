@@ -1,8 +1,27 @@
 version: '3'
 services:
-  app:
+  greeting_env:
     build: .
     environment:
       - USER_NAME=ComposeUser
     volumes:
       - .:/app
+    command: python greeting_env.py
+
+  greeting_logging:
+    build: .
+    volumes:
+      - .:/app
+    command: python greeting_logging.py
+
+  greeting_sqlite:
+    build: .
+    volumes:
+      - .:/app
+    command: python greeting_sqlite.py
+
+  greeting_yaml:
+    build: .
+    volumes:
+      - .:/app
+    command: python greeting_yaml.py

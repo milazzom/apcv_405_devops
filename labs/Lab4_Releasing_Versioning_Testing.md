@@ -69,4 +69,5 @@ Learn to manage releases, use version control, and automate testing with free to
 - Take screenshots of:
   - The GitHub Release page.
   - Test results locally and in GitHub Actions.
-- Submit as instructed by your instructor.
+- Put all screenshots in a Word document named: NetId-Lab4.docx
+- Submit your Word document with screenshots in D2L against the Lab 4 assignment.

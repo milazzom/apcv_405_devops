@@ -83,4 +83,5 @@ Choose a cloud provider and follow their free-tier instructions:
   - Docker image running locally.
   - Docker Hub repository.
   - Cloud dashboard (if deployed).
-- Submit as instructed by your instructor.
+- Put all screenshots in a Word document named: NetId-Lab5.docx
+- Submit your Word document in D2L against the Lab 5 assignment.

@@ -1,4 +1,4 @@
-# Lab 6: Configuring
+# Lab 6: Configuring Applications
 
 ## Objective
 Configure applications using environment variables and config files, connect to a database, and use Docker Compose for multi-service setups.

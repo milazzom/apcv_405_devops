@@ -30,7 +30,7 @@
 ## 4. Infrastructure as Code (IaC)
 - What is IaC?
 - Benefits of IaC in DevOps
-- Popular IaC tools (Terraform, CloudFormation, Pulumi)
+- Popular IaC tools (Terraform, CloudFormation, Azure Resource Manager Templates, Pulumi)
 
 ---
 

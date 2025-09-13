@@ -50,10 +50,6 @@
 
 ---
 
-## 5. Lab Exercise 1 Due
-
----
-
 ## Suggested Reading & Practice
 - Set up a GitHub repository and practice branching/merging.
 - Explore a testing tool relevant to your language.

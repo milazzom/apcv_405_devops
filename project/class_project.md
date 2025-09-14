@@ -15,8 +15,7 @@ Before starting this project, ensure you have the following:
 ### Required Software
 - [ ] **Git**: [https://git-scm.com/downloads](https://git-scm.com/downloads)
 - [ ] **Docker Desktop**: [https://www.docker.com/products/docker-desktop/](https://www.docker.com/products/docker-desktop/)
-- [ ] **Jenkins**: [https://www.jenkins.io/download/](https://www.jenkins.io/download/ - unless running as a container)
-- [ ] **Java 11 or higher**: [https://adoptium.net/](https://adoptium.net/) (required for Jenkins unless running as a container)
+
 
 
 ### Required Knowledge

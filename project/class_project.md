@@ -358,3 +358,4 @@ Please submit a Word document in D2L with the following:
 - [Docker Best Practices](https://docs.docker.com/develop/dev-best-practices/)
 - [Jenkins Tutorial](https://www.jenkins.io/doc/tutorials/)
 - [GitHub Actions vs Jenkins](https://github.com/features/actions)
+- [Build a .NET Web App with Jenkins Tutorial](https://www.jenkins.io/doc/tutorials/build-a-dotnet-web-app-with-jenkins/)

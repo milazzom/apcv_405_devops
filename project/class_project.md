@@ -16,6 +16,7 @@ Before starting this project, ensure you have the following:
 - [ ] **Git**: [https://git-scm.com/downloads](https://git-scm.com/downloads)
 - [ ] **Docker Desktop**: [https://www.docker.com/products/docker-desktop/](https://www.docker.com/products/docker-desktop/)
 - [ ] **Java SDK v21**: [https://www.oracle.com/java/technologies/downloads/#jdk21-windows](https://www.oracle.com/java/technologies/downloads/#jdk21-windows)
+- [ ] **.NET 8**: [https://dotnet.microsoft.com/en-us/download/dotnet/8.0](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
 
 
 
@@ -134,6 +135,7 @@ Create a Jenkinsfile that defines your CI/CD pipeline stages for the provided ap
 1. **Create a Jenkinsfile in the root of the cloned repository**
       - The pipeline should:
          - Clone your forked repository
+         - Run the tests in ClassProjectApp.Tests using the 'dotnet' runtime.
          - Build the application using Docker
          - Push the Docker image to your DockerHub account
          - Run the container on port 9090 (host) mapped to 8080 (container)

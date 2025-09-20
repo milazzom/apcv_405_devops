@@ -15,6 +15,7 @@ Before starting this project, ensure you have the following:
 ### Required Software
 - [ ] **Git**: [https://git-scm.com/downloads](https://git-scm.com/downloads)
 - [ ] **Docker Desktop**: [https://www.docker.com/products/docker-desktop/](https://www.docker.com/products/docker-desktop/)
+- [ ] **Java SDK v21**: [https://www.oracle.com/java/technologies/downloads/#jdk21-windows](https://www.oracle.com/java/technologies/downloads/#jdk21-windows)
 
 
 

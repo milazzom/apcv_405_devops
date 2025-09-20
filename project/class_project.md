@@ -51,13 +51,13 @@ Clone and use the provided application repository for your CI/CD pipeline projec
 2. **Review the application code and structure**
    - The application listens on port 8080 and exposes a health endpoint at `/health`.
    - For this project, you will run the application container on port 9090 (host) mapped to 8080 (container).
-   - Review the repository for a Dockerfile and automated tests. If missing, add them as needed in later stages.
+   - Review the repository for a Dockerfile and automated tests.
 
 ### Resources
 - [Original apcv_405_app GitHub Repository](https://github.com/milazzom/apcv_405_app)
 - Your forked repository on GitHub
 
-## Stage 2: Creating Automated Tests
+## Stage 2: Automated Tests
 
 ### Objective
 ### Instructions
@@ -84,7 +84,7 @@ Ensure the application can be containerized and run on port 9090.
 ### Instructions
 
 1. **Check for a Dockerfile**
-    - If a Dockerfile is present, review it to ensure it exposes port 9090 and runs the app correctly.
+    - Review the provided Dockerfile to ensure it exposes port 9090 and runs the app correctly.
 
 2. **Test your Docker build locally**
    ```bash
@@ -111,41 +111,17 @@ Install and configure Jenkins to automate your CI/CD pipeline.
 
 1. **Install Jenkins**
    
-   **Option A: Using Docker (Recommended)**
-   ```bash
-   docker run -d -p 8080:8080 -p 50000:50000 --name jenkins \
-     -v jenkins_home:/var/jenkins_home \
-     -v /var/run/docker.sock:/var/run/docker.sock \
-     jenkins/jenkins:lts
-   ```
-
-   **Option B: Direct Installation**
-   - Follow the installation guide for your OS: [https://www.jenkins.io/doc/book/installing/](https://www.jenkins.io/doc/book/installing/)
+   - Follow the installation guide for your OS: [https://www.jenkins.io/doc/book/installing/](https://www.jenkins.io/doc/book/installing/).  Make sure you have Java version 21 installed, as well as Docker.
 
 2. **Initial Jenkins Setup**
    - Navigate to `http://localhost:8080`
-   - Retrieve the initial admin password:
-     ```bash
-     docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
-     ```
+   - Retrieve the initial admin password
    - Install suggested plugins
    - Create an admin user
 
-3. **Install Required Plugins**
-   - Go to "Manage Jenkins" → "Manage Plugins"
-   - Install the following plugins:
-     - Docker Pipeline
-     - GitHub Integration Plugin
-     - Pipeline: Stage View Plugin
-     - Blue Ocean (optional but recommended)
-
-4. **Configure Docker in Jenkins**
-   - Go to "Manage Jenkins" → "Global Tool Configuration"
-   - Add Docker installation or configure to use Docker from PATH
-
 ### Resources
 - [Jenkins Documentation](https://www.jenkins.io/doc/)
-- [Jenkins Docker Installation](https://www.jenkins.io/doc/book/installing/docker/)
+- [Jenkins: Using Credentials](https://www.jenkins.io/doc/book/using/using-credentials/)
 
 ## Stage 5: Creating the Jenkins Pipeline
 
@@ -157,14 +133,19 @@ Create a Jenkinsfile that defines your CI/CD pipeline stages for the provided ap
 1. **Create a Jenkinsfile in the root of the cloned repository**
       - The pipeline should:
          - Clone your forked repository
-         - Build the application
-         - Run automated tests using the following command:
-            ```bash
-            dotnet test ClassProjectApp.Tests/ClassProjectApp.Tests.csproj -c Release
-            ```
-         - Build and push a Docker image to DockerHub
+         - Build the application using Docker
+         - Push the Docker image to your DockerHub account
          - Run the container on port 9090 (host) mapped to 8080 (container)
          - Perform a health check on `http://localhost:9090/health`
+      - Each of these different tasks should be defined in their own "Stages" within the pipeline.
+
+NOTE: If you're going to be running on Windows, you can execute command-line scripts using 'bat' instead of 'sh'.  So if I wanted to run 'docker --version' in a Jenkins pipeline stage, I would do the following:
+
+```bash
+bat 'docker --version'
+```
+
+If you install the Jenkins 'Docker' plugin (Manage Jenkins -> Plugins), you can also use docker steps like in the [Jenkins example](https://www.jenkins.io/doc/book/pipeline/syntax/#agent-parameters).  Either approach will be sufficent, so long as the built image is uploaded to your dockerhub account and 
 
 2. **Commit the Jenkinsfile**
     ```bash
@@ -266,7 +247,7 @@ Document your pipeline and clean up resources.
    - Include screenshots of successful pipeline execution
 
 3. **Cleanup Resources**
-   - Stop and remove test containers: `docker stop apcv_405_app && docker rm apcv_405_app`
+   - Stop and remove test containers: `docker stop apcv_405_app && docker rm apcv_405_app` (assuming your container is called apcv_405_app)
    - Clean up old Docker images: `docker image prune`
 
 ### Example README.md Addition
@@ -290,7 +271,7 @@ This project includes an automated CI/CD pipeline using Jenkins that:
 docker pull your-dockerhub-username/apcv_405_app:latest
 docker run -p 9090:8080 your-dockerhub-username/apcv_405_app:latest
 ```
-```
+
 
 ## Troubleshooting
 
@@ -315,21 +296,6 @@ docker run -p 9090:8080 your-dockerhub-username/apcv_405_app:latest
    - Check Dockerfile syntax
    - Verify all dependencies are included
    - Test container locally before pipeline
-
-### Useful Commands
-```bash
-# View Jenkins logs
-docker logs jenkins
-
-# Debug Docker builds
-docker build --no-cache -t test-image .
-
-# Check running containers
-docker ps
-
-# View container logs for the project app container
-docker logs apcv_405_app
-```
 
 ## Grading Rubric
 

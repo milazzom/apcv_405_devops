@@ -19,7 +19,7 @@ Package an application using Docker, push to Docker Hub, and explore Infrastruct
 ### 2. Create a Dockerfile
 **Purpose:** Define how your application is packaged and run inside a container.
 
-- Use the provided [`Dockerfile`](../provided_lab_files/Lab5/Dockerfile:1) in your project directory.
+- Use the provided [`Dockerfile`](../provided_lab_files/Lab5/Dockerfile:1) in your project directory. Be sure to execute these commands in a directory with a copy of greeting.py within it.
 
 ---
 
@@ -41,6 +41,11 @@ Package an application using Docker, push to Docker Hub, and explore Infrastruct
 **Purpose:** Share your container image with others and enable cloud deployments.
 
 - Sign up for a free [Docker Hub account](https://hub.docker.com/).
+- Create a repository within your account called 'devops-greeting':
+  1. Log in to your Docker Hub account.
+  2. Click on "Repositories" in the top menu.
+  3. Click the "Create Repository" button.
+  4. Enter the repository name (e.g., `devops-greeting`), set visibility to "Public", and click "Create".
 - Log in from your terminal:
   ```sh
   docker login

@@ -44,6 +44,27 @@ Set up monitoring for a containerized application, collect and visualize metrics
 - Access Grafana at [http://localhost:3000](http://localhost:3000) (default login: admin/admin).
 - Add Prometheus as a data source in Grafana and create a dashboard to visualize `hello_requests_total`.
 
+#### Adding Prometheus as a Data Source in Grafana
+
+1. In Grafana, in the left sidebar, select **Data Sources**.
+2. Click **Add data source**.
+3. Choose **Prometheus** from the list of available data sources.
+4. In the **HTTP** section, set the URL to `http://prometheus:9090` (if using Docker Compose) or `http://localhost:9090` (if accessing directly).
+5. Click **Save & Test** to verify the connection.
+6. Once successful, Prometheus is ready to be used as a data source for your dashboards.
+
+#### Creating a Grafana Dashboard for `hello_requests_total`
+
+1. Log in to Grafana at [http://localhost:3000](http://localhost:3000) (default: admin/admin).
+2. Click on **Dashboards** in the left sidebar and click on the "+ Create Dashboard" button.
+3. Click **Add new panel**.
+4. In the query editor, select **Prometheus** as the data source.
+5. Enter `hello_requests_total` in the query field.
+6. Set the visualization type to **Time series** (default).
+7. Adjust panel settings as desired (title, axes, legend, etc.).
+8. Click **Apply** to save the panel to your dashboard.
+9. Optionally, save the dashboard for future use.
+10. Adjust the time window to smaller durations like last 15 minutes to see how the metric visualization scales.
 ---
 
 ### 5. Review Logs

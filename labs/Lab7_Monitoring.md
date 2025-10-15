@@ -49,7 +49,7 @@ Set up monitoring for a containerized application, collect and visualize metrics
 1. In Grafana, in the left sidebar, select **Data Sources**.
 2. Click **Add data source**.
 3. Choose **Prometheus** from the list of available data sources.
-4. In the **HTTP** section, set the URL to `http://prometheus:9090` (if using Docker Compose) or `http://localhost:9090` (if accessing directly).
+4. In the **HTTP** section, set the URL to `http://prometheus:9090`.
 5. Click **Save & Test** to verify the connection.
 6. Once successful, Prometheus is ready to be used as a data source for your dashboards.
 

@@ -9,10 +9,15 @@ Configure applications using environment variables and config files, connect to 
 **Purpose:** Learn to use environment variables to configure your application without changing code.
 
 - Use the provided [`greeting_env.py`](../provided_lab_files/Lab6/greeting_env.py:1) file.
-- Run with a custom name:
+- Run with a custom name (Linux):
   ```sh
   USER_NAME="YourName" python greeting_env.py
   ```
+  - On Windows, use:
+    ```bat
+    set USER_NAME=YourName
+    python greeting_env.py
+    ```
 
 ---
 
